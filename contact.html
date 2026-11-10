@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Café · Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Campus Café logo: a steaming coffee cup in a red-brown badge">
+        <span>Campus Café</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <h1>Contact &amp; Visit</h1>
+      <p class="lede">Questions, catering requests, lost scarves — or just want to reserve the long
+      table for your study group? Send us a message below.</p>
+      <div class="contact-wrap">
+        <form action="https://formsubmit.co/rio.gatacilo.iii@adamson.edu.ph" method="POST">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required
+                   placeholder="e.g. Alex Rivera" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required
+                   placeholder="you@student.edu" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="topic">What is this about?</label>
+            <select id="topic" name="topic">
+              <option value="feedback">General feedback</option>
+              <option value="events">Event or workshop booking</option>
+              <option value="catering">Catering for a club or class</option>
+              <option value="jobs">Working at the café</option>
+              <option value="lost">Lost &amp; found</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Tell us everything (keep the croissant gossip coming)…"></textarea>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-note">Name and email are required. In this class project the form posts locally —
+          wire the <code>action</code> attribute to a real handler (e.g. Formspree) to receive messages.</p>
+        </form>
+        <aside class="contact-info" aria-label="Find us">
+          <h2>Find us</h2>
+          <ul>
+            <li><strong>Address:</strong> Student Union Building, Room 102, 42 College Avenue</li>
+            <li><strong>Email:</strong> <a href="mailto:hello@campuscafe.example">hello@campuscafe.example</a></li>
+            <li><strong>Mon–Fri:</strong> 7:30 – 18:00</li>
+            <li><strong>Saturday:</strong> 9:00 – 15:00</li>
+            <li><strong>Sunday:</strong> Closed (the baristas have essays too)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section>
+        <h2>Visit us</h2>
+        <address>
+          Student Union Building, Room 102<br>
+          42 College Avenue<br>
+          <a href="mailto:hello@campuscafe.example">hello@campuscafe.example</a>
+        </address>
+      </section>
+      <section>
+        <h2>Hours</h2>
+        <ul>
+          <li>Mon–Fri · 7:30 – 18:00</li>
+          <li>Saturday · 9:00 – 15:00</li>
+          <li>Sunday · Closed</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <p>© 2026 Campus Café · A student-run final project site. All copy is original.</p>
+    </div>
+  </footer>
+</body>
+</html>
